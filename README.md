@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="http://g.recordit.co/WsPNef4GGo.gif" width=300/>
+<img src="http://g.recordit.co/YzbcI0x6As.gif" width=300/>
 
 GIF created with [RecordIt](https://recordit.co) for macOS
 

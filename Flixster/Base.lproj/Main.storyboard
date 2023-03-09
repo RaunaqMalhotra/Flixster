@@ -102,81 +102,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eeS-kF-lAn">
-                                <rect key="frame" x="10" y="103" width="373" height="690"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="72Z-Sy-MVi" userLabel="Main Stack View">
+                                <rect key="frame" x="0.0" y="65" width="393" height="418"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f8t-Dd-1vj">
-                                        <rect key="frame" x="0.66666666666665719" y="0.0" width="372" height="250"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="ETg-ii-Dwe"/>
-                                        </constraints>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fo4-MF-zPi">
-                                        <rect key="frame" x="130.33333333333334" y="250" width="112.66666666666666" height="440"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wur-X8-SVh">
+                                        <rect key="frame" x="2.6666666666666572" y="0.0" width="388" height="284.33333333333331"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7d-US-qvc" userLabel="MovieNameLabel">
-                                                <rect key="frame" x="32.666666666666657" y="0.0" width="47" height="146.66666666666666"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" translatesAutoresizingMaskIntoConstraints="NO" id="uQU-GO-k3Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="388" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="afB-G3-i00"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTs-PZ-Fhs" userLabel="Title">
+                                                <rect key="frame" x="166" y="258" width="56" height="26.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Cwz-me-KFZ">
-                                                <rect key="frame" x="0.0" y="146.66666666666669" width="112.66666666666667" height="146.66666666666669"/>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="60b-6J-5MU" userLabel="Voting stack view">
+                                        <rect key="frame" x="35" y="308.33333333333331" width="323" height="65.333333333333314"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="B2m-Cp-5EL" userLabel="Vote Stack View">
+                                                <rect key="frame" x="0.0" y="1.9999999999999964" width="161.66666666666666" height="61.666666666666657"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="oXR-8A-SlI">
-                                                        <rect key="frame" x="0.0" y="51.999999999999943" width="41.333333333333336" height="42.666666666666657"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N47-iE-yTm" userLabel="voteAverage label">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dez-tj-8e3" userLabel="voteCount label">
-                                                                <rect key="frame" x="0.0" y="22.333333333333371" width="41.333333333333336" height="20.333333333333329"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1p-FJ-1jM" userLabel="popularity label">
-                                                        <rect key="frame" x="71.333333333333314" y="63.333333333333321" width="41.333333333333343" height="20.333333333333336"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06d-Tv-Fdi" userLabel="vote average label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXg-RA-mJ4" userLabel="vote count label">
+                                                        <rect key="frame" x="0.0" y="41.333333333333371" width="41.333333333333336" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JU-G8-fKk" userLabel="overview label">
-                                                <rect key="frame" x="35.666666666666657" y="293.33333333333337" width="41.333333333333343" height="146.66666666666663"/>
-                                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfe-mj-Rkz" userLabel="popularity label">
+                                                <rect key="frame" x="161.66666666666663" y="22.666666666666686" width="161.33333333333337" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsv-o8-L8C" userLabel="overview label">
+                                        <rect key="frame" x="176" y="397.66666666666669" width="41.333333333333343" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="418" id="3Ck-vN-gmD"/>
+                                    <constraint firstItem="60b-6J-5MU" firstAttribute="leading" secondItem="72Z-Sy-MVi" secondAttribute="leading" constant="35" id="H3I-ak-9Li"/>
+                                    <constraint firstAttribute="trailing" secondItem="60b-6J-5MU" secondAttribute="trailing" constant="35" id="tBt-P4-d2c"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hBi-Fy-I4P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hBi-Fy-I4P" firstAttribute="trailing" secondItem="eeS-kF-lAn" secondAttribute="trailing" constant="10" id="8Tx-aF-6t6"/>
-                            <constraint firstItem="eeS-kF-lAn" firstAttribute="leading" secondItem="hBi-Fy-I4P" secondAttribute="leading" constant="10" id="Gxb-tu-OMh"/>
-                            <constraint firstItem="hBi-Fy-I4P" firstAttribute="bottom" secondItem="eeS-kF-lAn" secondAttribute="bottom" constant="25" id="a13-0N-7fL"/>
-                            <constraint firstItem="hBi-Fy-I4P" firstAttribute="top" secondItem="eeS-kF-lAn" secondAttribute="top" id="uTD-1V-fqZ"/>
+                            <constraint firstItem="hBi-Fy-I4P" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="72Z-Sy-MVi" secondAttribute="bottom" constant="24" id="AWh-uJ-Jw4"/>
+                            <constraint firstItem="72Z-Sy-MVi" firstAttribute="trailing" secondItem="hBi-Fy-I4P" secondAttribute="trailing" id="WRS-A4-EGR"/>
+                            <constraint firstItem="72Z-Sy-MVi" firstAttribute="top" secondItem="hNY-lG-czn" secondAttribute="top" constant="65" id="bmD-iW-BQ0"/>
+                            <constraint firstItem="72Z-Sy-MVi" firstAttribute="leading" secondItem="hBi-Fy-I4P" secondAttribute="leading" id="fdL-ds-439"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4IG-Pb-QdN"/>
                     <connections>
-                        <outlet property="movieImage" destination="f8t-Dd-1vj" id="U1U-28-os3"/>
-                        <outlet property="movieName" destination="g7d-US-qvc" id="ruQ-da-WJW"/>
-                        <outlet property="movieOverviewLabel" destination="5JU-G8-fKk" id="FKg-y0-F9N"/>
-                        <outlet property="popularityLabel" destination="K1p-FJ-1jM" id="aZy-Ok-pwH"/>
-                        <outlet property="voteAverage" destination="N47-iE-yTm" id="Hm7-ti-rLW"/>
-                        <outlet property="voteCount" destination="dez-tj-8e3" id="5UL-Xf-wcO"/>
+                        <outlet property="movieImage" destination="uQU-GO-k3Q" id="7r8-RO-nWi"/>
+                        <outlet property="movieName" destination="tTs-PZ-Fhs" id="zkE-P6-coF"/>
+                        <outlet property="movieOverviewLabel" destination="fsv-o8-L8C" id="uoK-tN-T8m"/>
+                        <outlet property="popularityLabel" destination="Cfe-mj-Rkz" id="VuV-uJ-6fo"/>
+                        <outlet property="voteAverage" destination="06d-Tv-Fdi" id="976-PW-tOn"/>
+                        <outlet property="voteCount" destination="TXg-RA-mJ4" id="QYN-tz-9CW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XzV-ke-nKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

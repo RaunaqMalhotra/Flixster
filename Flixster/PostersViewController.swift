@@ -49,17 +49,18 @@ class PostersViewController: UIViewController, UICollectionViewDataSource {
         }.resume()
         
         posterCollectionView.dataSource = self
-        
+        view.backgroundColor = UIColor.black
+
         let layout = posterCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
-        layout.minimumInteritemSpacing = 9
-        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 1
+        layout.minimumLineSpacing = 1
         
         let numberOfColumns: CGFloat = 3
         
         let width = (posterCollectionView.bounds.width - layout.minimumInteritemSpacing * (numberOfColumns - 1)) / numberOfColumns
         
-        layout.itemSize = CGSize(width: width, height: width)
+        layout.itemSize = CGSize(width: width, height: width*2)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

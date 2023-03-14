@@ -210,17 +210,17 @@
             </objects>
             <point key="canvasLocation" x="892.36641221374043" y="3.5211267605633805"/>
         </scene>
-        <!--Posters-->
+        <!--Posters View Controller-->
         <scene sceneID="7Jp-of-eFO">
             <objects>
-                <viewController id="3ya-UG-fI9" userLabel="Posters" customClass="PostersViewController" customModule="Flixster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3ya-UG-fI9" userLabel="Posters View Controller" customClass="PostersViewController" customModule="Flixster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cNR-jm-ktY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-rT-tVj">
                                 <rect key="frame" x="16" y="103" width="361" height="666"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ms9-TY-K08">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -255,7 +255,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FIn-Ix-k8D"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YUZ-rT-tVj" firstAttribute="top" secondItem="cNR-jm-ktY" secondAttribute="topMargin" id="WiL-o7-Jqb"/>
                             <constraint firstAttribute="bottomMargin" secondItem="YUZ-rT-tVj" secondAttribute="bottom" id="eWI-kk-LkU"/>
@@ -278,6 +278,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CHb-xE-jPq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vMg-B8-jss">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -299,6 +300,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eN3-4U-3Jn">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -311,7 +315,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Cfl-32-fJk"/>
+        <segue reference="y6I-rN-YYL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="doc.richtext.fill" catalog="system" width="115" height="128"/>

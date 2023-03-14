@@ -1,6 +1,6 @@
 # Project 2 and 3 - *Flixster*
 
-Submitted by: **Raunaq**
+Submitted by: **Raunaq Malhotra**
 
 Wondering which movie to watch next? **Flixster** is a movie browsing app that helps you to find a movie you want to watch. Apart from reading the synopsis, you can also see the vote average, number of votes, and the popularity of the movie before making an informed choice to enjoy your time! Browse the movies in two different tabs - by name or by poster - and make the best decision for your movie night :D 
 

@@ -24,15 +24,17 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // Use helper method to get the poster image url
         // Load the image located at the `posterPath` URL and set it on the image view.
-        Nuke.loadImage(with: movie.posterPath, into: movieImage)
+        Nuke.loadImage(with: formatPathURL(with: movie.poster_path), into: movieImage)
         
         // Set labels with the associated track values.
-        movieName.text = movie.movieTitle
-        voteAverage.text = String(movie.voteAverage) + " Vote Average"
-        voteCount.text = String(movie.voteCount) + " Votes"
+        movieName.text = movie.title
+        voteAverage.text = String(movie.vote_average) + " Vote Average"
+        voteCount.text = String(movie.vote_count) + " Votes"
         popularityLabel.text = String(movie.popularity) + " Popularity"
-        movieOverviewLabel.text = movie.movieOverview
+        movieOverviewLabel.text = movie.overview
         view.backgroundColor = UIColor(red: 255/255, green: 204/255, blue: 229/255, alpha: 1.0)
     }
     

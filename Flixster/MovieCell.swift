@@ -29,11 +29,11 @@ class MovieCell: UITableViewCell {
     
     /// Configures the cell's UI for the given movie.
     func configure(with movie: Movie) {
-        movieNameLabel.text = movie.movieTitle
-        movieOverviewLabel.text = movie.movieOverview
+        movieNameLabel.text = movie.title
+        movieOverviewLabel.text = movie.overview
 
         // Load image async via Nuke library image loading helper method
-        Nuke.loadImage(with: movie.posterPath, into: movieImageView)
+        Nuke.loadImage(with: formatPathURL(with: movie.poster_path), into: movieImageView)
     }
 
 }
